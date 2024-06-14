@@ -1,16 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import Navigation from '../components/Navigation.astro';
 import '../styles/global.css'
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="欢迎来到Astro.">
     <main>
         <nav>
-            <a href="/">首页</a>
-			<a href="/about">关于</a>
-			<a href="/blog/">博客</a>
-			<a href="/note/">课程笔记</a>
+            <Navigation />
         </nav>
         <svg
             class="astro-a"
@@ -46,6 +45,9 @@ import '../styles/global.css'
         <ul>
             <li><a href="/posts/1/">我的第一篇博客文章</a></li>
         </ul>
+        <footer>
+			<Footer />
+		</footer>
     </main>
 </Layout>
 
