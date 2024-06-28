@@ -1,16 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Navigation from '../components/Navigation.astro';
-import '../styles/global.css';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Navigation from "../components/Navigation.astro";
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="欢迎来到Astro.">
+<Layout title="Createciecles Studio 创界工作室">
 	<main>
 		<nav>
 			<Navigation />
-        </nav>
+		</nav>
 		<svg
 			class="astro-a"
 			width="495"
@@ -39,57 +39,56 @@ import Footer from '../components/Footer.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>欢迎来到 <span class="text-gradient">Astro</span></h1>
-		<h2>welcome to Astro！</h2>
-		<h3>P211012615 </a><span class="text-gradient"></a>李楠</span></a>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-		<footer>
-			<Footer />
-		</footer>
+		<h1>
+			欢迎来到 <span class="text-gradient"> 创界工作室</span>
+		</h1>
+		<h2>Welcome to Createcircles Studio</h2>
+		<h3>创始人 <span class="text-gradient"> 李楠</span></h3>
 	</main>
 </Layout>
+<p class="instructions">
+	设计有形，品牌有力，创意无限——点击<code>联系方式</code> 联系我们<br/>
+	<strong>Createcircles Studio创界工作室</strong> 打造专属您的品牌故事
+</p>
+<ul role="list" class="link-card-grid">
+	<Card
+		href="https://docs.astro.build/"
+		title="定制设计"
+		body="我们精心按照每一位客户的需求定制作品，确保设计完美符合您的品牌形象和需求"
+	/>
+	<Card
+		href="https://astro.build/integrations/"
+		title="内容丰富"
+		body="我们的团队擅长将复杂的信息转化为简洁、清晰的要点，使您的作品更加有审美性"
+	/>
+	<Card
+		href="https://astro.build/themes/"
+		title="动画交互"
+		body="我们运用创意动画和交互元素，让您的作品更加生动和吸引人"
+	/>
+	<Card
+		href="https://astro.build/chat/"
+		title="快速交付"
+		body="我们理解时间的重要性，承诺在约定的时间内提供高质量的成品❤️"
+	/>
+</ul>
+<footer>
+	<Footer />
+</footer>
 
 <style>
-	footer{
-
-	}
 	main {
 		margin: auto;
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
-		color: white;
+		color: rgb(120, 107, 131);
 		font-size: 20px;
 		line-height: 1.6;
 	}
 	nav a {
-        color: #ffffff;
-    }
+		color: #ffffff;
+	}
 	.astro-a {
 		position: absolute;
 		top: -32px;
@@ -108,8 +107,9 @@ import Footer from '../components/Footer.astro';
 	}
 	h2 {
 		text-align: center;
+		color: rgb(231, 216, 245);
 	}
-	h3{
+	h3 {
 		text-align: center;
 	}
 	.text-gradient {
@@ -122,7 +122,10 @@ import Footer from '../components/Footer.astro';
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		background: linear-gradient(
+			rgba(var(--accent-dark), 66%),
+			rgba(var(--accent-dark), 33%)
+		);
 		padding: 1.5rem;
 		border-radius: 8px;
 	}
